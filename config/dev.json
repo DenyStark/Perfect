@@ -1,0 +1,9 @@
+{
+	"database": {
+		"host": "inspiration.c4ruh2ko7al9.us-east-2.rds.amazonaws.com",
+		"user": "DenyStark",
+		"password": "12hsa-85bsa-olx1z",
+		"database": "inspiration_business",
+		"port": 5432
+	}
+}

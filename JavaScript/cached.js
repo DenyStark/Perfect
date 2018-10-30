@@ -1,4 +1,4 @@
-const сached = (func, cacheTimeout = Infinity) => {
+const cached = (func, cacheTimeout = Infinity) => {
   let cache = [];
 
   return params => {
@@ -23,7 +23,7 @@ const сached = (func, cacheTimeout = Infinity) => {
 };
 
 const getTime = params => (new Date().toISOString() + '\t' + params.hello);
-const cachedTime = сached(getTime, 5000);
+const cachedTime = cached(getTime, 5000);
 
 setInterval(() => {
   console.log(cachedTime({ hello: 'good night!' }));
